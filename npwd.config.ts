@@ -1,17 +1,14 @@
 import App from './src/App';
 import { GarageIcon, NotificationIcon } from './icon';
-import { theme } from './src/app.theme';
 
-export const externalAppConfig = () => ({
-  id: 'garage',
+export const path = '/npwd_qbx_garages';
+export default () => ({
+  id: 'npwd_qbx_garages',
   nameLocale: 'Garage',
   color: '#fff',
   backgroundColor: '#333',
-  path: '/garage',
+  path,
   icon: GarageIcon,
   app: App,
-  notificationIcon: NotificationIcon,
-  theme: theme,
+  notificationIcon: NotificationIcon
 });
-
-export default externalAppConfig;
